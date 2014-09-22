@@ -1,0 +1,21 @@
+# Benchmarking average number of comparisons for successful find
+# Data structure: set
+# Data: sorted
+# N is powers of 2, minus 1, from 1 to 32768
+# Averaging over 5 runs for each N
+         # N    avgcomps       stdev
+           1           2           0
+           3           3           0
+           7     4.14286 3.45971e-08
+          15     5.26667 6.95692e-08
+          31     6.35484  5.8902e-08
+          63      7.4127 5.70468e-08
+         127     8.44882 3.95127e-08
+         255     9.47059 1.60231e-08
+         511     10.4834 7.66632e-08
+        1023     11.4907 5.53804e-08
+        2047     12.4949  4.4392e-08
+        4095     13.4972 7.58899e-08
+        8191     14.4985 3.26893e-08
+       16383     15.4992 8.71272e-08
+       32767     16.4996 2.35608e-08
